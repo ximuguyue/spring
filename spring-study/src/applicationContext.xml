@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="helloworld" class="com.atguigu.spring.beans.HelloWorld">
+		<property name="name" value="Spring"></property>
+	</bean>
+	
+   <bean id ="car" class="com.atguigu.spring.beans.Car">
+	   <constructor-arg value="audi" index="0"></constructor-arg>
+	   <constructor-arg value="Shanghai" index="1"></constructor-arg>
+	   <constructor-arg value="300000" type="double"></constructor-arg>
+   </bean>
+    
+    <bean id="car2" class="com.atguigu.spring.beans.Car">
+    	<constructor-arg value="Baoma" type="java.lang.String"></constructor-arg>
+    	<constructor-arg value="Shanghai" type="java.lang.String"></constructor-arg>
+    	<constructor-arg value="240" type="int"></constructor-arg>
+    </bean>
+    
+
+</beans>
