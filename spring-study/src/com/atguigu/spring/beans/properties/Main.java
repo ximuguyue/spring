@@ -12,7 +12,7 @@ public class Main {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans-properties.xml");
 		DataSource datasource = (DataSource) ctx.getBean("dataSource");
 		System.out.println("123");
-		System.out.println(datasource.getConnection());
+		System.out.println(datasource.toString());
 		System.out.println("123");
 	}
 }
